@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import SmallCard from './component/card';
+import MainCard from './component/mainCard';
 
 function App() {
+  const firstCard = {
+    largCardColor: "orange",
+    smallCardColor: "brown"
+  }
+
+  const data =   {
+    "title": "Work",
+    "timeframes": {
+      "daily": {
+        "current": 5,
+        "previous": 7
+      },
+      "weekly": {
+        "current": 32,
+        "previous": 36
+      },
+      "monthly": {
+        "current": 103,
+        "previous": 128
+      }
+    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <MainCard />
+      <div className='container-sub-2'>
+        <SmallCard style={firstCard} data={data} time="Weekly"/>
+        <SmallCard style={firstCard} data={data} time="Weekly"/>
+        <SmallCard style={firstCard} data={data} time="Weekly"/>
+        <SmallCard style={firstCard} data={data} time="Weekly"/>
+        <SmallCard style={firstCard} data={data} time="Weekly"/>
+        <SmallCard style={firstCard} data={data} time="Weekly"/>
+      </div>
     </div>
   );
 }

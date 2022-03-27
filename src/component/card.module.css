@@ -1,0 +1,40 @@
+.mainCard {
+    border-radius: 10px;
+    width: 220px;
+    height: 220px;
+    position: relative;
+    color: #fff;
+}
+
+.subCard {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardHeader h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.h2 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.subHour {
+    font-size: 15px;
+    opacity: .8;
+}
