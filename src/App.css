@@ -7,7 +7,20 @@
 .container-sub-2 {
   flex-basis: 75%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .container {
+    margin: 2rem auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .container-sub-2 {
+    max-width: 300px;
+    justify-content: center;
+  }
 }
