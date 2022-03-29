@@ -2,13 +2,13 @@ import classes from "./card.module.css";
 
 const SmallCard = (props) => {
     const time = props.time;
-    const {largCardColor, smallCardColor, backgroundImage} = props.style;
+    const {largCardColor, backgroundImage} = props.style;
     const {title, timeframes: {[time]: {current, previous }}} = props.data;
  
     return ( 
         <div className={classes.mainCard} style={{backgroundColor: largCardColor }}>
             <img src={backgroundImage} alt="" className={classes.backgroundImage}/>
-            <div className={classes.subCard} style={{backgroundColor: smallCardColor}}>
+            <div className={classes.subCard}>
                 <div className={classes.cardHeader}>
                     <h3>{title}</h3>
                     <i className="fa-solid fa-ellipsis"></i>

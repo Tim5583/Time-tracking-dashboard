@@ -12,9 +12,9 @@ const MainCard = (props) => {
                 </div>
             </div>
             <div className={classes.badges}>
-                <p onClick={() => props.onClick("daily")}>Daily</p>
-                <p onClick={() => props.onClick("weekly")}>Weekly</p>
-                <p onClick={() => props.onClick("monthly")}>Monthly</p>
+                <p onClick={() => props.onClick("daily")} className={props.time === "daily" ? classes.active : ""}>Daily</p>
+                <p onClick={() => props.onClick("weekly")} className={props.time === "weekly" ? classes.active : ""}>Weekly</p>
+                <p onClick={() => props.onClick("monthly")} className={props.time === "monthly" ? classes.active : ""}>Monthly</p>
             </div>
         </div>
      );
