@@ -10,7 +10,7 @@ const SmallCard = (props) => {
             <img src={backgroundImage} alt="" className={classes.backgroundImage}/>
             <div className={classes.subCard}>
                 <div className={classes.cardHeader}>
-                    <h3>{title}</h3>
+                    <h2>{title}</h2>
                     <i className="fa-solid fa-ellipsis"></i>
                 </div>
                 <div className={classes.hours}>
